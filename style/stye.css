@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    
 }
 
 .content{
@@ -31,6 +32,7 @@
     font-size: 9em;
     font-weight: 550;
     color: #6f4d90;
+    user-select: none;
     
 }
 .estado{
@@ -42,6 +44,7 @@
     
     border-radius: 0.3em 0em 0em 0.3em; 
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2);
+    user-select: none;
     
 }
 .space{
