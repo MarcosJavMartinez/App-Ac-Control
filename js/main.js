@@ -2,18 +2,19 @@ const botonAscendente = document.getElementById('contadorAscendente');
 const botonDescendente = document.getElementById('contadorDescendente');
 const contador = document.getElementById('contador');
 const estado = document.getElementById('estado');
+const limiteInferior = 14;
+const limiteSuperior = 28;
 let count = 21;
-const limite = 28;
 
 botonAscendente.addEventListener('click', () => {
-  if (count < limite) {
+  if (count < limiteSuperior) {
     count++;
     actualizarContador();
   }
 });
 
 botonDescendente.addEventListener('click', () => {
-  if (count > 14) {
+  if (count > limiteInferior) {
     count--;
     actualizarContador();
   }
