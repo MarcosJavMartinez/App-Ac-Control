@@ -5,7 +5,6 @@ body{
 
 .content{    
     text-align: center;
-    margin: 10em, 10em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +14,14 @@ body{
 }
 
 .app{
-    border: 0.1em solid blue;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
     margin: auto;
-      
+    border-radius: 0.8em;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2); 
 }
 
 .button{
@@ -27,20 +31,34 @@ body{
     background: none;
     border: none;
     fill: #6f4d90;
-}
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+ 
 
 #contador{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9em;
     font-weight: 550;
     color: #6f4d90;    
+  
 }
 
 .estado{
-    width: 4em;    
+    
+    padding: 0.1em;
+    width: 1.5em; 
+    height: 1.5em;   
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: #6f4d90;    
     border-radius: 0.3em 0em 0em 0.3em; 
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2); 
+
+    
 }

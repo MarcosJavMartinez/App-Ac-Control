@@ -4,6 +4,11 @@ const contador = document.getElementById('contador');
 const estado = document.getElementById('estado');
 const limiteInferior = 14;
 const limiteSuperior = 28;
+const imgC = '<img src="img/hot.svg">';
+const imgN = '<img src="img/normal.svg">';
+const imgF = '<img src="img/ice.svg">';
+
+
 let count = 21;
 
 botonAscendente.addEventListener('click', () => {
@@ -23,10 +28,10 @@ botonDescendente.addEventListener('click', () => {
 function actualizarContador() {
   contador.textContent = count;
   if (count >= 24 && count <= 27) {
-    estado.textContent = "Calor";
+    estado.innerHTML = imgC;
   } else if (count >= 18 && count < 24) {
-    estado.textContent = "Normal";
+    estado.innerHTML = imgN;
   } else if (count >= 14 && count < 18) {
-    estado.textContent = "Frio";
+    estado.innerHTML = imgF;
   }
 }
