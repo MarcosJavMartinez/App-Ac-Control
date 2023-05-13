@@ -13,8 +13,9 @@ body{
     height: 100%;    
 }
 
-.app{
-    
+.appContent{
+    width: 20em;
+    height: 39em;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -24,10 +25,15 @@ body{
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2); 
 }
 
+.app{
+    padding: 2em;
+}
+
+
 .button{
-    width: 10em;
+    width: 11em;
     opacity: 0.3;
-    margin: 5em;
+    
     background: none;
     border: none;
     fill: #6f4d90;
@@ -42,6 +48,7 @@ body{
  
 
 #contador{
+   margin: 0.4em 0em 0.4em 0em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9em;
     font-weight: 550;
@@ -50,14 +57,15 @@ body{
 }
 
 .estado{
-    
+
+    margin: 0;
     padding: 0.1em;
     width: 1.5em; 
     height: 1.5em;   
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: #6f4d90;    
-    border-radius: 0.3em 0em 0em 0.3em; 
+    border-radius: 0.2em 0em 0em 0.2em; 
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2); 
 
     
